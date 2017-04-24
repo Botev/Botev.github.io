@@ -2,6 +2,23 @@
 <header id="_sidebar" class="sidebar" role="banner">
   <div id="_asidebar" class="container sidebar-sticky">
     <div class="sidebar-about">
+      {% if include.author.photo2x %}
+      <img
+        class="sidebar_me"
+        alt="{{ site.author }}"
+        src="{{ site.author.photo }}"
+        srcset="{{ site.author.photo2x }} 2x"
+        />
+      {% else %}
+      <img
+        class="sidebar_me"
+        alt="{{ site.author.name }}"
+        src="{{ site.author.photo }}"
+        />
+      {% endif %}
+    </div>
+    
+    <div class="sidebar-about">
       <h1 class="font-accent"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
       {{ site.description | markdownify }}
     </div>

@@ -7,7 +7,11 @@ layout: compress
 
   {% include head.html %}
 
-  <body>
+  <body
+  {% if  site.fout_removal %}
+  style="visibility: hidden;"
+  {% endif %}
+  >
     {% include menu.html %}
 
     <main class="content container" role="main">

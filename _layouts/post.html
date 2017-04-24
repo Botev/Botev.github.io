@@ -4,7 +4,7 @@ layout: default
 
 {% include post.html post=page link_title=false %}
 
-{% if site.author.about %}
+{% if site.per_post_about and site.author.about %}
   {% include about.html author=site.author %}
 {% endif %}
 

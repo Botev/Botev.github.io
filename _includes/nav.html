@@ -21,4 +21,7 @@
       {% endif %}
     {% endif %}
   {% endfor %}
+  <li>
+    <a class="sidebar-nav-item {% if page.url == "/archive/" %}active{% endif %}" href="{{ site.baseurl }}/archive">Archive</a>
+  </li>
 </ul>

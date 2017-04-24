@@ -11,17 +11,22 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
 
-hyde:
-  name: Hyde
-  image: /hydejack/public/img/hyde.jpg
+autodiff:
+  name: Autodiff
+  # image: '/public/img/pic43.jpg'
   color: '#949667'
   description: >
-    Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
-    It’s based on Poole, the Jekyll butler.
+    Autodiff (automatic differentiation and efficient symbolic differentiation)
+    is a fundamental tool which has significantly increased the speed of
+    development and research in Machine Learning.
 
-jekyll:
-  name: Jekyll
-  image: /hydejack/public/img/jekyll.jpg
+
+deeplearning:
+  name: Deep Learning
+  # image: '/public/img/pic43.jpg'
   color: '#949667'
   description: >
-    Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
+    Deep Learning is a branch of Machine Learning which uses very complicated
+    and "deep" nonlinear models as function approixmators. These usually are
+    framed as Neural Networks, however there are so many variations of them
+    that I like to think them as just flexible function approixmators.
