@@ -1,0 +1,10 @@
+{% if  site.fout_removal %}
+  <script>
+    function makeBodyVisible() { document.body.style.visibility = 'visible'; }
+    if (window.addEventListener) window.addEventListener("load", makeBodyVisible, false);
+    else if (window.attachEvent) window.attachEvent("onload", makeBodyVisible);
+    else window.onload = makeBodyVisible;
+    // This is not needed when the the style is set in _layouts/base.html
+    // document.body.style.visibility = 'hidden';
+  </script>
+{% endif %}

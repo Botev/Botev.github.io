@@ -201,3 +201,7 @@ paypal:
 download:
   name: Download
   icon: icon-box-add
+scholar:
+  name: Scholar
+  icon: icon-books
+  prepend: "https://scholar.google.com/citations?user="

@@ -74,7 +74,7 @@ layout: compress
   {% include head.html %}
 </head>
 
-<body>
+<body {% if  site.fout_removal %} style="visibility: hidden;"{% endif %} >
   {% include body.html %}
   {% include templates.html %}
 </body>

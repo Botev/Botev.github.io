@@ -10,6 +10,11 @@
     <div class="{{ bg_class }}" style="{{ bg_style }}"></div>
 
     <div class="sidebar-sticky">
+      {% if author.sidebar_picture %}
+        <div class="sidebar-about">
+          {% include srcset-img.html class="sidebar_avatar" img=author.sidebar_picture alt=author.name %}
+        </div>
+      {% endif %}
       <div class="sidebar-about">
         <h2 class="h1"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
         {% assign text = site.tagline | default:site.description %}
